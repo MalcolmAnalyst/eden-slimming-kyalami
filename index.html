@@ -3,38 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eden Slimming & Beauty Kyalami | Non-Surgical Body Contouring & Aesthetics</title>
-  <meta name="description" content="Transform your body and glow at Eden Slimming and Beauty Kyalami. Laser Lipo, body contouring, facials, and opening specials in Kyalami, Midrand. Book via WhatsApp." />
-  
-  <!-- Tailwind CSS CDN (Swap for compiled CSS in production if desired) -->
+  <title>Eden Slimming &amp; Beauty Kyalami | Feel Confident In Your Own Body</title>
+  <meta name="description" content="Non-invasive body treatments and slimming in Kyalami, Midrand. Laser Lipo, Hawkins EMS, Radio Frequency, Ultrasonic Cavitation, Double Chin &amp; Lymphatic Drainage." />
+
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  
-  <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
+
+  <!-- Google Fonts: Cormorant Garamond (Editorial Serif) & Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <script>
     tailwind.config = {
       theme: {
         extend: {
           fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
             sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-            serif: ['"Playfair Display"', 'serif'],
           },
           colors: {
             eden: {
-              50: '#f4f9f6',
-              100: '#e2f1e8',
-              200: '#c5e3d2',
-              600: '#2e7d5b',
-              700: '#246348',
-              800: '#1d4f3a',
-              900: '#184131',
-            },
-            gold: {
-              400: '#d4af37',
-              500: '#c59b27',
+              blush: '#fdf2f6',
+              pink: '#f8dce7',
+              berry: '#b01259',
+              berryDark: '#8d0c46',
+              rose: '#c27d96',
+              ink: '#0d0d0d',
             }
           }
         }
@@ -42,306 +37,335 @@
     }
   </script>
 </head>
-<body class="bg-stone-50 text-stone-800 antialiased selection:bg-eden-200 selection:text-eden-900">
+<body class="bg-white text-eden-ink font-sans antialiased selection:bg-eden-pink selection:text-eden-ink">
 
   <!-- =====================================================================
-       EASY-TO-EDIT SALON CONFIGURATION
-       Update monthly specials, prices, or contact details right here!
+       EASY-TO-EDIT KYALAMI SALON CONFIG
+       Update specials, prices, or contact info here and push to GitHub.
   ====================================================================== -->
   <script>
     const SALON_CONFIG = {
       branchName: "Eden Slimming & Beauty Kyalami",
-      whatsappNumber: "27000000000", // Replace with branch WhatsApp number (format: 27821234567)
+      whatsappNumber: "27000000000", // Replace with Kyalami WhatsApp number (e.g., 27821234567)
       phoneDisplay: "082 000 0000",
       instagramHandle: "edenslimmingandbeautykyalami",
-      address: "Kyalami Corner / Kyalami Business Park Precinct, Midrand, 1684",
+      address: "Kyalami, Midrand, Gauteng",
       hours: "Mon – Fri: 08:30 – 17:30 | Sat: 08:30 – 14:00",
-      
-      // EDIT MONTHLY SPECIALS HERE
-      specialsBannerText: "KYALAMI LAUNCH SPECIAL: Save up to 30% on Trial Slimming Packages this month!",
+
       specials: [
         {
-          badge: "Most Popular",
-          title: "Kyalami Launch Trial Session",
-          subtitle: "1x Laser Lipo + 1x Lymphatic Drainage",
-          price: "R450",
-          originalPrice: "R650",
-          description: "Experience measurable centimeter loss in your very first session. Ideal for targeting stubborn belly, thigh, or arm areas.",
-          whatsappMessage: "Hi Eden Kyalami! I'd like to book the Kyalami Launch Trial Session (R450)."
+          tag: "Kyalami Opening Special",
+          title: "20 x Laser Lipo Sessions",
+          price: "R4,000",
+          note: "Save R1,900 | Limited Package Available",
+          desc: "Non-invasive 14-pad low-level laser technology for measurable centimeter loss with zero downtime.",
+          waMsg: "Hi Eden Kyalami! I'd like to secure the 20 x Laser Lipo Sessions special (R4,000)."
         },
         {
-          badge: "Best Value",
-          title: "4-Session Body Sculpt Bundle",
-          subtitle: "4x Laser Lipo + Cavitation + Radio Frequency",
-          price: "R1,650",
-          originalPrice: "R2,400",
-          description: "Our signature non-surgical inch-loss and skin-tightening course designed for visible contouring results.",
-          whatsappMessage: "Hi Eden Kyalami! I'm interested in the 4-Session Body Sculpt Bundle (R1,650)."
+          tag: "Complimentary Start",
+          title: "Consultation & Body Assessment",
+          price: "FREE",
+          note: "Book Your Complimentary Consultation",
+          desc: "Tell us about your goals and target areas so we can personalise a treatment journey around you.",
+          waMsg: "Hi Eden Kyalami! I'd like to book my complimentary consultation."
         },
         {
-          badge: "Glow & Relax",
-          title: "Radiant Skin & Detox Combo",
-          subtitle: "Deep Cleanse Facial + Pressotherapy Detox",
-          price: "R590",
-          originalPrice: "R820",
-          description: "Flush toxins, boost circulation, and leave with hydrated, glowing skin in one relaxing 75-minute visit.",
-          whatsappMessage: "Hi Eden Kyalami! I'd like to book the Radiant Skin & Detox Combo (R590)."
+          tag: "Contour & Sculpt",
+          title: "Targeted Slimming Bundle",
+          price: "Ask for Pricing",
+          note: "Laser Lipo + Cavitation / Lymphatic Wrap",
+          desc: "Combine body contouring and lymphatic drainage to support inch loss, smoothness, and circulation.",
+          waMsg: "Hi Eden Kyalami! Please send me more information on treatment packages and prices."
         }
       ],
 
-      // EDIT CORE TREATMENTS MENU HERE
       treatments: [
         {
-          category: "Slimming & Contouring",
-          items: [
-            { name: "Non-Surgical Laser Lipo (Single Session)", price: "From R450", desc: "Targets localized fat pockets painlessly with zero downtime." },
-            { name: "Ultrasonic Cavitation", price: "From R500", desc: "Breaks down stubborn fat cells using targeted soundwave technology." },
-            { name: "Radio Frequency (RF) Skin Tightening", price: "From R480", desc: "Stimulates collagen to firm loose skin and smooth cellulite." },
-            { name: "EMS Muscle Sculpting", price: "From R550", desc: "Tones and strengthens core, glutes, or arms effortlessly." }
-          ]
+          name: "Laser Lipo",
+          desc: "Laser Lipo is a non-invasive, pain-free, centimeter loss treatment using low-level laser technology to target selected areas and support a more contoured appearance—with no surgery, needles or downtime. Measurable results from day one."
         },
         {
-          category: "Beauty & Wellness",
-          items: [
-            { name: "Hydrating & Anti-Aging Facials", price: "From R420", desc: "Tailored facial treatments for clear, youthful, radiant skin." },
-            { name: "Lymphatic Pressotherapy Suit", price: "From R300", desc: "Accelerates inch loss, reduces water retention, and detoxifies." },
-            { name: "Full Body / Back Neck & Shoulder Massage", price: "From R380", desc: "Relieve tension and boost circulation with our trained therapists." },
-            { name: "Waxing, Tint & Brow Shaping", price: "From R120", desc: "Quick, clean grooming essentials for everyday confidence." }
-          ]
+          name: "Hawkins EMS",
+          desc: "Hawkins EMS uses electrical muscle stimulation to create controlled muscle contractions, helping to activate and tone targeted muscle groups while supporting your body-contouring goals."
+        },
+        {
+          name: "Radio Frequency",
+          desc: "Radio Frequency uses controlled heat energy to warm the deeper layers of the skin, helping to improve the appearance of skin firmness, smoothness and overall texture."
+        },
+        {
+          name: "Ultrasonic Cavitation",
+          desc: "Ultrasonic Cavitation uses low-frequency ultrasound technology to target selected areas, helping support body contouring, reduce the appearance of cellulite, and promote a smoother-looking appearance."
+        },
+        {
+          name: "Double Chin",
+          desc: "Radio Frequency Double Chin uses controlled radio frequency energy to heat the skin in the treatment area, helping improve the appearance of skin firmness and creating a more defined-looking jawline."
+        },
+        {
+          name: "Lymphatic Drainage Body Wrap",
+          desc: "Lymphatic Drainage Body Wrap is a gentle, relaxing treatment designed to support lymphatic flow and help reduce the feeling of temporary puffiness, leaving you feeling lighter and refreshed."
+        }
+      ],
+
+      journeySteps: [
+        { num: "1", title: "BOOK", text: "Book your complimentary consultation." },
+        { num: "2", title: "CONSULT", text: "Tell us about your goals and the areas you'd like to focus on." },
+        { num: "3", title: "PERSONALISE", text: "We'll recommend a treatment programme suited to you." },
+        { num: "4", title: "BEGIN", text: "Start your Eden journey." }
+      ],
+
+      reviews: [
+        {
+          quote: "This journey has been an extremely positive experience. The ladies are knowledgeable and advised exactly accordingly to my needs and budget. Within the 1st session I lost 13cm by just lying still. The sessions are super relaxing.",
+          author: "Verified Client Review"
+        },
+        {
+          quote: "The environment set is calm, relaxing and the personal touch to ensure clients are catered for is amazing. The ladies provide excellent service, are open and very professional. I feel comfortable each time I attend my session.",
+          author: "Verified Client Review"
+        },
+        {
+          quote: "I've finally found something that works for me. Results were visible from the first session. Losing 6 cm after just one session is a huge achievement for me. It's affordable and worth the money spent.",
+          author: "Verified Client Review"
         }
       ]
     };
 
-    // Helper to generate WhatsApp Click-to-Chat URLs
-    function getWhatsAppUrl(message) {
-      return `https://wa.me/${SALON_CONFIG.whatsappNumber}?text=${encodeURIComponent(message)}`;
+    function waLink(msg) {
+      return `https://wa.me/${SALON_CONFIG.whatsappNumber}?text=${encodeURIComponent(msg)}`;
     }
   </script>
 
-  <!-- TOP PROMO BAR -->
-  <div class="bg-eden-900 text-white text-xs sm:text-sm py-2.5 px-4 text-center font-medium">
-    <span id="top-banner-text">KYALAMI LAUNCH SPECIAL: Book your trial session today!</span>
-    <a href="#specials" class="underline ml-2 text-eden-200 hover:text-white font-semibold">View Deals &rarr;</a>
-  </div>
-
-  <!-- STICKY NAVIGATION -->
-  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-stone-200">
+  <!-- HEADER -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-pink-100">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
-      <a href="#" class="flex items-center gap-2">
-        <span class="w-8 h-8 rounded-full bg-eden-700 text-white flex items-center justify-center font-serif font-bold text-lg">E</span>
-        <div>
-          <span class="font-serif font-bold text-lg text-eden-900 block leading-none">Eden Slimming</span>
-          <span class="text-[11px] uppercase tracking-widest text-eden-600 font-semibold">& Beauty Kyalami</span>
-        </div>
+      <a href="#" class="leading-none">
+        <span class="font-serif text-xs block text-eden-ink">Welcome to</span>
+        <span class="font-serif text-2xl font-medium text-eden-ink">Eden</span>
+        <span class="font-serif italic text-[11px] block text-eden-rose -mt-1">Slimming &amp; Beauty · Kyalami</span>
       </a>
 
-      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-stone-600">
-        <a href="#specials" class="hover:text-eden-700 transition">Specials</a>
-        <a href="#treatments" class="hover:text-eden-700 transition">Treatments</a>
-        <a href="#why-us" class="hover:text-eden-700 transition">Why Eden</a>
-        <a href="#location" class="hover:text-eden-700 transition">Location</a>
+      <nav class="hidden md:flex items-center gap-7 text-xs uppercase tracking-widest font-semibold text-stone-700">
+        <a href="#journey" class="hover:text-eden-berry transition">Our Approach</a>
+        <a href="#treatments" class="hover:text-eden-berry transition">Treatments</a>
+        <a href="#specials" class="hover:text-eden-berry transition">Specials</a>
+        <a href="#reviews" class="hover:text-eden-berry transition">Results</a>
       </nav>
 
-      <a id="nav-whatsapp-btn" href="#" target="_blank" rel="noopener"
-         class="inline-flex items-center gap-2 bg-eden-700 hover:bg-eden-800 text-white text-sm font-semibold px-4 py-2.5 rounded-full shadow-sm transition">
-        <span>Book Now</span>
+      <a id="nav-cta" href="#" target="_blank" rel="noopener"
+         class="bg-eden-berry hover:bg-eden-berryDark text-white text-xs font-bold uppercase tracking-wider px-4 py-2.5 transition">
+        <span class="underline underline-offset-4">Book Consultation</span>
       </a>
     </div>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="relative bg-gradient-to-b from-eden-50 to-stone-50 pt-12 pb-16 sm:pt-20 sm:pb-24 px-4 sm:px-6">
-    <div class="max-w-4xl mx-auto text-center">
-      <span class="inline-block bg-eden-100 text-eden-800 text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full mb-5">
-        Now Open in Kyalami, Midrand
-      </span>
-      <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-stone-900 tracking-tight leading-tight mb-6">
-        Visible Inch Loss &amp; Radiant Beauty—<span class="text-eden-700 italic">Without Surgery.</span>
-      </h1>
-      <p class="text-base sm:text-lg text-stone-600 max-w-2xl mx-auto mb-8 leading-relaxed">
-        Step into Eden Slimming and Beauty Kyalami for non-invasive Laser Lipo, body contouring, and rejuvenating skin treatments tailored to your goals.
-      </p>
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-3.5">
-        <a id="hero-whatsapp-btn" href="#" target="_blank" rel="noopener"
-           class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-eden-700 hover:bg-eden-800 text-white font-semibold px-7 py-4 rounded-full shadow-md transition text-base">
-          <!-- WhatsApp SVG Icon -->
-          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/></svg>
-          Book Free Consultation on WhatsApp
-        </a>
-        <a href="#specials"
-           class="w-full sm:w-auto inline-flex items-center justify-center bg-white hover:bg-stone-100 text-stone-800 border border-stone-300 font-semibold px-7 py-4 rounded-full transition text-base">
-          See Opening Specials
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- MONTHLY SPECIALS SECTION (Auto-populated from SALON_CONFIG) -->
-  <section id="specials" class="py-16 px-4 sm:px-6 max-w-6xl mx-auto">
-    <div class="text-center max-w-2xl mx-auto mb-12">
-      <span class="text-eden-700 font-bold text-xs uppercase tracking-widest">Limited-Time Offers</span>
-      <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900 mt-2">Kyalami Branch Specials</h2>
-      <p class="text-stone-600 mt-3 text-sm sm:text-base">Tap any special below to claim your spot directly on WhatsApp—no upfront online payment required.</p>
-    </div>
-
-    <div id="specials-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <!-- Cards injected automatically via JS -->
-    </div>
-  </section>
-
-  <!-- TREATMENTS & PRICING MENU (Auto-populated from SALON_CONFIG) -->
-  <section id="treatments" class="py-16 px-4 sm:px-6 bg-white border-y border-stone-200">
-    <div class="max-w-5xl mx-auto">
-      <div class="text-center max-w-2xl mx-auto mb-12">
-        <span class="text-eden-700 font-bold text-xs uppercase tracking-widest">Treatment Menu</span>
-        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900 mt-2">Slimming, Sculpting &amp; Beauty</h2>
-        <p class="text-stone-600 mt-3 text-sm sm:text-base">Every journey starts with a quick body assessment so our therapists can recommend the right session plan for you.</p>
+  <!-- HERO BANNER (Split White + Blush Accent Matching Canva) -->
+  <section class="bg-white border-b border-pink-100">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 items-center">
+      <div class="md:col-span-5 bg-eden-blush py-12 px-6 text-center md:text-left">
+        <p class="font-serif text-lg text-eden-ink">Welcome to</p>
+        <p class="font-serif text-5xl font-medium text-eden-ink leading-none my-1">Eden</p>
+        <p class="font-serif italic text-lg text-eden-rose">Slimming &amp; Beauty</p>
+        <p class="text-xs uppercase tracking-widest text-stone-600 mt-3 font-semibold">Kyalami Branch</p>
       </div>
 
-      <div id="treatments-container" class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <!-- Categories injected automatically via JS -->
-      </div>
-    </div>
-  </section>
-
-  <!-- WHY EDEN / TRUST SECTION -->
-  <section id="why-us" class="py-16 px-4 sm:px-6 max-w-6xl mx-auto">
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
-      <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm">
-        <div class="w-12 h-12 mx-auto bg-eden-100 text-eden-700 rounded-full flex items-center justify-center font-bold text-xl mb-4">1</div>
-        <h3 class="font-bold text-lg text-stone-900 mb-2">Non-Invasive &amp; Painless</h3>
-        <p class="text-sm text-stone-600">Walk in on your lunch break and return straight to your day—no needles, downtime, or recovery needed.</p>
-      </div>
-      <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm">
-        <div class="w-12 h-12 mx-auto bg-eden-100 text-eden-700 rounded-full flex items-center justify-center font-bold text-xl mb-4">2</div>
-        <h3 class="font-bold text-lg text-stone-900 mb-2">Measurable Results</h3>
-        <p class="text-sm text-stone-600">We measure before and after your sessions so you can track real centimeter loss and skin firmness.</p>
-      </div>
-      <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm">
-        <div class="w-12 h-12 mx-auto bg-eden-100 text-eden-700 rounded-full flex items-center justify-center font-bold text-xl mb-4">3</div>
-        <h3 class="font-bold text-lg text-stone-900 mb-2">Tailored Packages</h3>
-        <p class="text-sm text-stone-600">Flexible single sessions or multi-session bundles built around your target areas and budget.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- LOCATION & CONTACT FOOTER -->
-  <footer id="location" class="bg-stone-900 text-stone-300 pt-14 pb-24 sm:pb-14 px-4 sm:px-6">
-    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-      <div>
-        <span class="text-eden-400 text-xs font-bold uppercase tracking-widest">Visit Our Kyalami Branch</span>
-        <h2 class="font-serif text-3xl font-bold text-white mt-2 mb-4">Eden Slimming &amp; Beauty</h2>
-        <ul class="space-y-3 text-sm">
-          <li><strong class="text-white">Address:</strong> <span id="footer-address"></span></li>
-          <li><strong class="text-white">Trading Hours:</strong> <span id="footer-hours"></span></li>
-          <li><strong class="text-white">WhatsApp / Call:</strong> <span id="footer-phone"></span></li>
-          <li>
-            <strong class="text-white">Instagram:</strong> 
-            <a id="footer-ig" href="#" target="_blank" rel="noopener" class="text-eden-300 hover:underline">@edenslimmingandbeautykyalami</a>
-          </li>
-        </ul>
-
-        <div class="mt-6 flex flex-wrap gap-3">
-          <a id="footer-whatsapp-btn" href="#" target="_blank" rel="noopener"
-             class="bg-eden-600 hover:bg-eden-700 text-white font-semibold text-sm px-5 py-3 rounded-full transition">
-            Chat on WhatsApp
+      <div class="md:col-span-7 py-12 px-6 sm:px-10 text-center md:text-left">
+        <h1 class="font-serif text-4xl sm:text-5xl font-semibold uppercase tracking-wide text-eden-ink leading-tight">
+          Feel Confident In Your Own Body.
+        </h1>
+        <p class="text-stone-700 mt-4 text-base sm:text-lg max-w-xl">
+          Non-invasive body treatments designed around your body.
+        </p>
+        <div class="mt-7 flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
+          <a id="hero-cta" href="#" target="_blank" rel="noopener"
+             class="inline-block bg-eden-berry hover:bg-eden-berryDark text-white text-xs sm:text-sm font-bold uppercase tracking-wider px-7 py-4 transition">
+            <span class="underline underline-offset-4">Book Your Consultation</span>
           </a>
-          <a id="footer-ig-btn" href="#" target="_blank" rel="noopener"
-             class="border border-stone-600 hover:border-stone-400 text-white font-semibold text-sm px-5 py-3 rounded-full transition">
-            Follow on Instagram
+          <a href="#specials"
+             class="inline-block border border-eden-ink text-eden-ink hover:bg-eden-blush text-xs sm:text-sm font-bold uppercase tracking-wider px-7 py-4 transition">
+            View Specials
           </a>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- Google Map Embed (Replace src with exact Kyalami salon pin embed link) -->
-      <div class="w-full h-64 rounded-2xl overflow-hidden border border-stone-700 bg-stone-800">
-        <iframe
-          title="Eden Slimming and Beauty Kyalami Map"
-          class="w-full h-full border-0"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps?q=Kyalami,+Midrand,+South+Africa&output=embed">
-        </iframe>
+  <!-- QUICK TRUST STRIP -->
+  <div class="bg-white border-b border-stone-200 py-4 px-4">
+    <div class="max-w-5xl mx-auto grid grid-cols-3 gap-4 text-center text-xs sm:text-sm">
+      <div><strong class="block text-eden-ink">12+ Years</strong><span class="text-stone-600">Experience</span></div>
+      <div><strong class="block text-eden-ink">Kyalami &amp; Branches</strong><span class="text-stone-600">Find Us Near You</span></div>
+      <div><strong class="block text-eden-ink">Non-Invasive</strong><span class="text-stone-600">Non-Surgical</span></div>
+    </div>
+  </div>
+
+  <!-- EDITORIAL STORY ("YOUR BODY JOURNEY STARTS HERE.") -->
+  <section id="journey" class="py-16 px-4 sm:px-6 bg-white">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="font-serif text-3xl sm:text-5xl font-medium uppercase tracking-wide text-eden-ink leading-tight mb-6">
+        Your Body Journey Starts Here.
+      </h2>
+      <div class="space-y-4 text-stone-800 text-sm sm:text-base leading-relaxed">
+        <p>At Eden Slimming, we believe your journey should be about more than numbers on a scale.</p>
+        <p>It's about feeling comfortable in your clothes, feeling confident in yourself, and making time to invest in you.</p>
+        <p>With over 12 years of experience, Eden offers a range of non-invasive body treatments designed to compliment your individual goals—from targeted body treatments and contouring to lymphatic drainage.</p>
+        <p>Our approach is simple: listen to your goals, understand what you need, and create a treatment journey around you.</p>
       </div>
     </div>
+  </section>
 
-    <div class="max-w-6xl mx-auto mt-10 pt-6 border-t border-stone-800 text-xs text-stone-500 flex flex-col sm:flex-row justify-between gap-2">
-      <p>&copy; <span id="year"></span> Eden Slimming and Beauty Kyalami. All rights reserved.</p>
-      <p>Results vary per individual based on lifestyle and treatment plan.</p>
+  <!-- 4 SIMPLE STEPS (Blush Section + Magenta Circles) -->
+  <section class="py-16 px-4 sm:px-6 bg-eden-blush border-y border-pink-100">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="font-serif text-3xl sm:text-4xl font-medium uppercase tracking-wide text-eden-ink mb-12">
+        Your Eden Journey in 4 Simple Steps
+      </h2>
+      <div id="steps-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"></div>
+    </div>
+  </section>
+
+  <!-- EXPLORE TREATMENTS -->
+  <section id="treatments" class="py-16 px-4 sm:px-6 bg-eden-blush/50">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="font-serif text-3xl sm:text-5xl font-medium uppercase tracking-wide text-eden-ink text-center mb-12">
+        Explore Our Treatments
+      </h2>
+      <div id="treatments-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+      <p class="text-center text-sm sm:text-base font-medium text-eden-ink mt-10">
+        Please contact us for more information on each treatment and their prices.
+      </p>
+    </div>
+  </section>
+
+  <!-- SPECIALS SECTION -->
+  <section id="specials" class="py-16 px-4 sm:px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs uppercase tracking-widest font-bold text-eden-berry">Kyalami Branch</span>
+        <h2 class="font-serif text-3xl sm:text-5xl font-medium uppercase tracking-wide text-eden-ink mt-1">
+          Current Specials &amp; Packages
+        </h2>
+      </div>
+      <div id="specials-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
+    </div>
+  </section>
+
+  <!-- REAL CLIENTS. REAL RESULTS. (Dark Band Matching Canva) -->
+  <section id="reviews" class="py-16 px-4 sm:px-6 bg-eden-ink text-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <p class="font-serif text-lg sm:text-xl uppercase tracking-widest text-pink-200">Real Clients</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-medium uppercase tracking-wide text-white mt-1">
+          Real Results.
+        </h2>
+      </div>
+      <div id="reviews-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
+      <p class="text-center text-xs text-stone-400 mt-8">
+        Reviews reflect real client feedback; individual results vary.
+      </p>
+    </div>
+  </section>
+
+  <!-- CLOSING CTA BANNER -->
+  <section class="py-16 px-4 sm:px-6 bg-eden-blush border-t border-pink-100 text-center">
+    <div class="max-w-3xl mx-auto">
+      <p class="font-serif text-2xl text-eden-ink">Ready to start?</p>
+      <h2 class="font-serif text-4xl sm:text-5xl font-medium uppercase tracking-wide text-eden-ink mt-1">
+        Your Eden Journey Starts Today.
+      </h2>
+      <p class="text-stone-700 mt-4 text-sm sm:text-base">
+        Book your complimentary consultation and let our team help you find the right treatment for your goals.
+      </p>
+      <a id="bottom-cta" href="#" target="_blank" rel="noopener"
+         class="mt-7 inline-block bg-eden-berry hover:bg-eden-berryDark text-white text-xs sm:text-sm font-bold uppercase tracking-wider px-8 py-4 transition">
+        <span class="underline underline-offset-4">Book My Consultation</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-eden-ink text-stone-300 py-10 px-4 sm:px-6 text-xs">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+      <div>
+        <p class="font-serif text-xl text-white">Eden Slimming &amp; Beauty · Kyalami</p>
+        <p id="footer-meta" class="text-stone-400 mt-1"></p>
+      </div>
+      <a id="footer-ig" href="#" target="_blank" rel="noopener" class="text-pink-200 hover:underline font-semibold">
+        @edenslimmingandbeautykyalami
+      </a>
     </div>
   </footer>
-
-  <!-- FLOATING MOBILE WHATSAPP BUTTON -->
-  <a id="floating-whatsapp-btn" href="#" target="_blank" rel="noopener" aria-label="Book on WhatsApp"
-     class="fixed bottom-4 right-4 z-50 sm:hidden flex items-center gap-2 bg-[#25D366] text-white font-bold text-sm px-4 py-3 rounded-full shadow-lg">
-    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/></svg>
-    <span>Book WhatsApp</span>
-  </a>
 
   <!-- RENDER SCRIPT -->
   <script>
     document.addEventListener("DOMContentLoaded", () => {
-      // Populate global text & links
-      document.getElementById("top-banner-text").textContent = SALON_CONFIG.specialsBannerText;
-      document.getElementById("footer-address").textContent = SALON_CONFIG.address;
-      document.getElementById("footer-hours").textContent = SALON_CONFIG.hours;
-      document.getElementById("footer-phone").textContent = SALON_CONFIG.phoneDisplay;
-      document.getElementById("year").textContent = new Date().getFullYear();
-
-      const igUrl = `https://www.instagram.com/${SALON_CONFIG.instagramHandle}/`;
-      document.getElementById("footer-ig").href = igUrl;
-      document.getElementById("footer-ig").textContent = `@${SALON_CONFIG.instagramHandle}`;
-      document.getElementById("footer-ig-btn").href = igUrl;
-
-      const defaultWa = getWhatsAppUrl("Hi Eden Slimming & Beauty Kyalami! I'd like to enquire about treatments and bookings.");
-      ["nav-whatsapp-btn", "hero-whatsapp-btn", "footer-whatsapp-btn", "floating-whatsapp-btn"].forEach(id => {
+      const defaultWa = waLink("Hi Eden Slimming & Beauty Kyalami! I'd like to book a consultation.");
+      ["nav-cta", "hero-cta", "bottom-cta"].forEach(id => {
         document.getElementById(id).href = defaultWa;
       });
 
-      // Render Specials Cards
-      const specialsGrid = document.getElementById("specials-grid");
-      SALON_CONFIG.specials.forEach(item => {
-        const card = document.createElement("div");
-        card.className = "bg-white rounded-2xl border border-stone-200 p-6 flex flex-col justify-between shadow-sm hover:shadow-md transition";
-        card.innerHTML = `
-          <div>
-            <span class="inline-block bg-eden-100 text-eden-800 text-xs font-bold px-3 py-1 rounded-full mb-4">${item.badge}</span>
-            <h3 class="font-serif text-xl font-bold text-stone-900">${item.title}</h3>
-            <p class="text-xs font-semibold text-eden-700 mt-1">${item.subtitle}</p>
-            <div class="mt-4 flex items-baseline gap-2">
-              <span class="text-3xl font-bold text-stone-900">${item.price}</span>
-              ${item.originalPrice ? `<span class="text-sm text-stone-400 line-through">${item.originalPrice}</span>` : ""}
+      document.getElementById("footer-meta").textContent =
+        `${SALON_CONFIG.address} · ${SALON_CONFIG.hours} · ${SALON_CONFIG.phoneDisplay}`;
+
+      const igLink = document.getElementById("footer-ig");
+      igLink.href = `https://www.instagram.com/${SALON_CONFIG.instagramHandle}/`;
+      igLink.textContent = `@${SALON_CONFIG.instagramHandle}`;
+
+      // 4 Steps
+      const stepsGrid = document.getElementById("steps-grid");
+      SALON_CONFIG.journeySteps.forEach(step => {
+        stepsGrid.innerHTML += `
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 rounded-full bg-eden-berry text-white font-bold text-2xl flex items-center justify-center mb-4">
+              ${step.num}
             </div>
-            <p class="text-sm text-stone-600 mt-3 leading-relaxed">${item.description}</p>
+            <h3 class="font-bold text-sm uppercase tracking-wider text-eden-ink">${step.title}</h3>
+            <p class="text-xs sm:text-sm text-stone-700 mt-1.5 max-w-[200px]">${step.text}</p>
           </div>
-          <a href="${getWhatsAppUrl(item.whatsappMessage)}" target="_blank" rel="noopener"
-             class="mt-6 w-full inline-flex items-center justify-center bg-eden-700 hover:bg-eden-800 text-white font-semibold text-sm py-3 px-4 rounded-xl transition">
-            Claim This Special on WhatsApp
-          </a>
         `;
-        specialsGrid.appendChild(card);
       });
 
-      // Render Treatments Menu
-      const treatmentsContainer = document.getElementById("treatments-container");
-      SALON_CONFIG.treatments.forEach(group => {
-        const box = document.createElement("div");
-        box.className = "bg-stone-50 rounded-2xl p-6 border border-stone-200";
-        const itemsHtml = group.items.map(t => `
-          <li class="py-3.5 border-b border-stone-200 last:border-b-0 flex justify-between items-start gap-4">
-            <div>
-              <h4 class="font-semibold text-stone-900 text-sm sm:text-base">${t.name}</h4>
-              <p class="text-xs text-stone-600 mt-0.5">${t.desc}</p>
-            </div>
-            <span class="font-bold text-eden-700 text-sm whitespace-nowrap">${t.price}</span>
-          </li>
-        `).join("");
-
-        box.innerHTML = `
-          <h3 class="font-serif text-2xl font-bold text-eden-900 mb-3">${group.category}</h3>
-          <ul>${itemsHtml}</ul>
+      // Treatments
+      const treatmentsGrid = document.getElementById("treatments-grid");
+      SALON_CONFIG.treatments.forEach(t => {
+        treatmentsGrid.innerHTML += `
+          <div class="bg-white border border-pink-100 p-6">
+            <h3 class="font-serif text-2xl font-semibold text-eden-ink mb-2">${t.name}</h3>
+            <p class="text-xs sm:text-sm text-stone-700 leading-relaxed">${t.desc}</p>
+          </div>
         `;
-        treatmentsContainer.appendChild(box);
+      });
+
+      // Specials
+      const specialsGrid = document.getElementById("specials-grid");
+      SALON_CONFIG.specials.forEach(s => {
+        specialsGrid.innerHTML += `
+          <div class="border border-pink-200 bg-eden-blush/40 p-6 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] uppercase tracking-widest font-bold text-eden-berry">${s.tag}</span>
+              <h3 class="font-serif text-2xl font-semibold text-eden-ink mt-1">${s.title}</h3>
+              <p class="font-serif text-4xl font-bold text-eden-ink mt-3">${s.price}</p>
+              <p class="text-xs font-semibold text-eden-rose mt-1">${s.note}</p>
+              <p class="text-xs sm:text-sm text-stone-700 mt-3 leading-relaxed">${s.desc}</p>
+            </div>
+            <a href="${waLink(s.waMsg)}" target="_blank" rel="noopener"
+               class="mt-6 inline-block text-center bg-eden-berry hover:bg-eden-berryDark text-white text-xs font-bold uppercase tracking-wider py-3.5 px-4 transition">
+              <span class="underline underline-offset-4">Enquire on WhatsApp</span>
+            </a>
+          </div>
+        `;
+      });
+
+      // Reviews
+      const reviewsGrid = document.getElementById("reviews-grid");
+      SALON_CONFIG.reviews.forEach(r => {
+        reviewsGrid.innerHTML += `
+          <div class="border border-pink-400/60 bg-white text-eden-ink p-6 flex flex-col justify-between">
+            <div>
+              <div class="text-eden-berry text-base tracking-widest mb-3">★★★★★</div>
+              <p class="text-xs sm:text-sm leading-relaxed text-stone-800">"${r.quote}"</p>
+            </div>
+            <p class="text-xs font-semibold text-stone-500 mt-4">${r.author}</p>
+          </div>
+        `;
       });
     });
   </script>
